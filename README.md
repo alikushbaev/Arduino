@@ -22,7 +22,7 @@ as possible to their Arduino programming language counterparts
  in 1 second intervals
 """
 
-from Arduino import Arduino
+from aurdrobotsd import Arduino
 import time
 
 board = Arduino() # plugged in via USB, serial com at rate 115200
@@ -41,7 +41,7 @@ while True:
 - Any [Arduino compatible microcontroller](https://www.sparkfun.com/categories/242) with at least 14KB of flash memory
 
 ## Installation:
-Either run `pip install arduino-python3` from a command line, or run `python setup.py
+Either run `pip install aurdrobotsd` from a command line, or run `python setup.py
 build install` from the source directory to install this library.
 
 ## Setup:
@@ -50,7 +50,7 @@ build install` from the source directory to install this library.
 2. Load the `prototype.ino` sketch onto your Arduino board, using the Arduino IDE.
 3. Set up some kind of serial I/O communication between the Arduino board and your computer (via physical USB cable,
 Bluetooth, xbee, etc. + associated drivers)
-4. Add `from Arduino import Arduino` into your python script to communicate with your Arduino
+4. Add `from aurdrobotsd import Arduino` into your python script to communicate with your Arduino
 
 For a collection of examples, see `examples.py`. This file contains methods which replicate
 the functionality of many Arduino demo sketches.
